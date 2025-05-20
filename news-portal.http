@@ -1,0 +1,6 @@
+@news_portal_HostAddress = http://localhost:5018
+
+GET {{news_portal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

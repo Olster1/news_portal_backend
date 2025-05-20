@@ -1,0 +1,54 @@
+## Build results
+bin/
+obj/
+out/
+
+## VS Code
+.vscode/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## ASP.NET secrets
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+## Resharper
+_ReSharper*/
+*.DotSettings.user
+
+## Logs
+*.log
+logs/
+
+## OS junk
+.DS_Store
+Thumbs.db
+
+## NuGet
+*.nupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+## Rider
+.idea/
+
+## Global JSON cache (optional)
+global.json
+
+## Coverage reports
+coverage/
+*.coverage
+*.coveragexml
+
+## Docker (if you build images locally)
+**/Dockerfile.*
+**/docker-compose.*
+.env
