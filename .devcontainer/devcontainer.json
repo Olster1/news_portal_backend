@@ -1,0 +1,11 @@
+{
+  "name": "C# Dev Container",
+  "image": "mcr.microsoft.com/dotnet/sdk:9.0-preview",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp"
+      ]
+    }
+  }
+}
