@@ -5,7 +5,6 @@ This is the backend API for the News Portal built with .NET 9.
 ## Prerequisites
 
 - [Docker](https://www.docker.com/get-started) installed on your machine
-
 ---
 
 ## Running the Application with Docker
@@ -31,7 +30,7 @@ docker build -t news-portal .
 docker run -p 5001:8080 news-portal
 ```
 
-You can now access the API localhost:5001/
+You can now access the API [localhost:5001/](http://localhost:5001)
 
 ### Documentation
 
