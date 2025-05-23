@@ -15,7 +15,7 @@ Follow these steps to build and run the app using Docker.
 
 ```bash
 git clone https://github.com/Olster1/news_portal_backend.git
-cd news-portal-backend
+cd news_portal_backend
 ```
 
 ### 2. Build Docker Image
