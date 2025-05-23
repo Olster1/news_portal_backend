@@ -10,9 +10,9 @@ public class NewService : INewsService
         _newsApiClient = newsApiClient;
     }
 
-    public async Task<IEnumerable<NewsArticle>> GetLatestNews()
+    public async Task<IEnumerable<NewsArticle>> GetLatestNews(int numberOfArticles)
     {
-        return await _newsApiClient.GetTopNewsFromExternalApiAsync();
+        return await _newsApiClient.GetTopNews(numberOfArticles);
     }
     public async Task<IEnumerable<NewsArticle>> GetNewsViaSearch(string searchString)
     { 

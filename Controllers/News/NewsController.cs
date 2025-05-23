@@ -25,9 +25,9 @@ namespace MyApp.Controllers.News
 
 
         [HttpGet("latest")]
-        public async Task<IActionResult> GetList()
+        public async Task<IActionResult> GetList([FromQuery] int n)
         {
-            var news = await _newsService.GetLatestNews();
+            var news = await _newsService.GetLatestNews(n);
             return Ok(news);
         }
     }
