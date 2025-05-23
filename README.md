@@ -32,3 +32,9 @@ docker run -p 5001:8080 news-portal
 ```
 
 You can now access the API localhost:5001/
+
+### Documentation
+
+To see the available API's, see the documentation at once the app is running:
+
+http://localhost:5001/openapi/v1.json

@@ -24,6 +24,8 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddOpenApi();
+
 builder.Services.AddControllers();
 
 //NOTE: Initialize all the custom services we're using. 
@@ -33,6 +35,11 @@ builder.Services.AddNewsServices();
 
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{ 
+     app.MapOpenApi();
+}
 
 app.UseCors();
 app.UseHttpsRedirection();

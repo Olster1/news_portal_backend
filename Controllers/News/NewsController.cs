@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyApp.Services.Interfaces;
@@ -16,6 +17,7 @@ namespace MyApp.Controllers.News
 
         }
 
+        [EndpointDescription("Retrieve news articles from a query string.")]
         [HttpGet("search")]
         public async Task<IActionResult> Get([FromQuery] string query)
         {
@@ -24,6 +26,7 @@ namespace MyApp.Controllers.News
         }
 
 
+        [EndpointDescription("Retrieve top headline news articles. Request number of articles via the n param.")]
         [HttpGet("latest")]
         public async Task<IActionResult> GetList([FromQuery] int n)
         {
