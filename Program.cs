@@ -7,7 +7,7 @@ using MyApp.Services.Interfaces;
 var builder = WebApplication.CreateBuilder(args);
 IWebHostEnvironment env = builder.Environment;
 
-String frontEndOrigin = "http://localhost:5173";
+String frontEndOrigin = "http://localhost:4173";
 
 if (env.IsProduction()) { 
     //TODO: Add custom domain name for CORS
