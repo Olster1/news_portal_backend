@@ -32,6 +32,12 @@ docker run -p 5001:5000 news-portal
 
 You can now access the API [localhost:5001/](http://localhost:5001)
 
+For this project the two apis i created were: 
+
+/api/news/latest?n=2 where n is number of articles you would like. (NOTE: Due to the limtations of GNews you can only get max of 10 at a time)
+
+/api/news/search?query=landcare where query is the search query you'd like to search on.
+
 ### Documentation
 
 To see the available API's, see the documentation at once the app is running:
