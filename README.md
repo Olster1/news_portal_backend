@@ -27,7 +27,7 @@ docker build -t news-portal .
 ### 3. Run the Docker Image
 
 ```bash
-docker run -p 5001:8080 news-portal
+docker run -p 5001:5000 news-portal
 ```
 
 You can now access the API [localhost:5001/](http://localhost:5001)

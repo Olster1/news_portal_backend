@@ -24,6 +24,7 @@ builder.Services.AddCors(options =>
     });
 });
 
+//NOTE: Add openai for our documentation
 builder.Services.AddOpenApi();
 
 builder.Services.AddControllers();
@@ -36,17 +37,15 @@ builder.Services.AddNewsServices();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{ 
-     app.MapOpenApi();
-}
+app.MapOpenApi();
 
 app.UseCors();
-app.UseHttpsRedirection();
+//TODO: Enable https redirection
+// app.UseHttpsRedirection();
 
 //TODO: Add Authentication middleware
-app.UseAuthentication();
-app.UseAuthorization();
+// app.UseAuthentication();
+// app.UseAuthorization();
 
 app.MapControllers(); 
 

@@ -19,8 +19,8 @@ WORKDIR /app
 # Copy published output from build stage
 COPY --from=build /app/publish .
 
-# Expose the default port (adjust if needed)
-EXPOSE 8080
+ENV ASPNETCORE_URLS=http://0.0.0.0:5000
+EXPOSE 5000
 
 # Start the application
 ENTRYPOINT ["dotnet", "news-portal.dll"]
